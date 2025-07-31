@@ -1,0 +1,132 @@
+name: the_bangla_brief
+description: Official app for The Bangla Brief YouTube channel - A comprehensive content and community platform.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  get: ^4.6.6
+  
+  # Firebase & Cloud Services
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.6
+  firebase_database: ^10.4.0
+  firebase_messaging: ^14.7.10
+  firebase_storage: ^11.6.0
+  firebase_analytics: ^10.7.4
+  
+  # UI & Material Design
+  cupertino_icons: ^1.0.6
+  material_color_utilities: ^0.8.0
+  flutter_animate: ^4.5.0
+  shimmer: ^3.0.0
+  lottie: ^3.0.0
+  
+  # Networking & API
+  http: ^1.1.2
+  dio: ^5.4.0
+  connectivity_plus: ^5.0.2
+  
+  # YouTube Integration
+  youtube_player_flutter: ^8.1.2
+  youtube_explode_dart: ^2.0.0
+  
+  # Image & Media
+  cached_network_image: ^3.3.1
+  image_picker: ^1.0.7
+  photo_view: ^0.14.0
+  flutter_image_compress: ^2.1.0
+  
+  # Local Storage & Caching
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.2
+  
+  # Text & Rich Content
+  flutter_html: ^3.0.0-beta.2
+  flutter_quill: ^9.0.0
+  markdown: ^7.2.1
+  
+  # Utils & Helpers
+  intl: ^0.19.0
+  url_launcher: ^6.2.4
+  share_plus: ^7.2.2
+  permission_handler: ^11.2.0
+  device_info_plus: ^9.1.2
+  package_info_plus: ^5.0.1
+  
+  # Notifications
+  flutter_local_notifications: ^16.3.2
+  
+  # Animation & Transitions
+  animations: ^2.0.11
+  
+  # Time & Date
+  timeago: ^3.6.0
+  
+  # Logging & Debugging
+  logger: ^2.0.2+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Code Quality & Analysis
+  flutter_lints: ^3.0.1
+  very_good_analysis: ^5.1.0
+  
+  # Code Generation
+  build_runner: ^2.4.7
+  hive_generator: ^2.0.1
+  json_annotation: ^4.8.1
+  json_serializable: ^6.7.1
+  
+  # Testing
+  mockito: ^5.4.4
+  fake_async: ^1.3.1
+  integration_test:
+    sdk: flutter
+
+# Hive type adapters generation
+flutter:
+  uses-material-design: true
+  
+  # App Icons & Splash
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/fonts/
+  
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 500
+
+# Build configurations
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  min_sdk_android: 21
+  
+flutter_native_splash:
+  color: "#1976D2"
+  image: "assets/images/splash_logo.png"
+  android_12:
+    image: "assets/images/splash_logo.png"
+    color: "#1976D2"
